@@ -1,0 +1,4 @@
+add_library(EndEffectorAdmittanceTask EndEffectorAdmittanceTask.cpp)
+target_link_libraries(EndEffectorAdmittanceTask ${cartesian_interface_LIBRARIES})
+include_directories(${cartesian_interface_INCLUDE_DIRS})
+target_link_libraries(exampleros ${cartesian_interface_INCLUDE_DIRS})
